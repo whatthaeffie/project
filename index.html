@@ -3,9 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Spooky Weather</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body><div class="container">
+    <div class="card" style="width: 30rem">
+        <div class="card-body">
+            <form class="search-form" id="searching">
+                <input type="search" placeholder="Type in a City..." autofocus="on" id="answer" />
+                <input type="submit" value="Enter" />
+            </form>
+            <br>
+            <h1 id="city">Los Angeles, CA</h1>
+            <h2><i class="fas fa-cloud-sun">
+                </i><span class="temperature" id="temp"> 19</span><span class="units">°C | <a href="#">°F</a></span>
+                <small id="date"></small></h2>
+
+            <div class="card-group">
+                <div class="card-body">
+                    <h6 class="card-title">Precipitation: 0% </h6>
+                    <br>
+                    <h6 class="humid">Humidity: <span id="humidity">51</span>% </h6>
+                    <br>
+                    <h6 class="wind">Wind: <span id="wind">0</span>mph</h6>
+                    <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="media my-2">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><i class="fas fa-cloud-sun"></i> Sun</h5>
+                                87° / 65°
+                            </div>
+                        </li>
+                        <li class="media my-2">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><i class="fas fa-sun"></i> Mon</h5>
+                                87° / 65°
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><i class="fas fa-sun"></i> Tues</h5>
+                                88° / 65°
+                            </div>
+                        </li>
+
+                        <li class="media my-2">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><i class="fas fa-sun"></i> Wed</h5>
+                                89° / 65°
+                            </div>
+                        </li>
+
+                        <li class="media my-2">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><i class="fas fa-sun"></i> Thurs</h5>
+                                88° / 67°
+                            </div>
+                        </li>
+
+                        <li class="media">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><i class="fas fa-cloud-sun"></i> Fri</h5>
+                                86° / 64°
+                            </div>
+                        </li>
+
+                        <li class="media my-2">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><i class="fas fa-sun"></i> Sat</h5>
+                                84° / 63°
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<h5><a href="https://github.com/whatthaeffie/weather-app"> Open-source code</a> by Effie Fletcher</h5>
+<script src="action.js"></script></body>
   <script src="script.js"></script>
 </html>
