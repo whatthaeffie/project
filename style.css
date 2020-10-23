@@ -1,0 +1,39 @@
+h1,
+h2 {
+  font-family: "Special Elite", cursive;
+}
+h2 {
+  font-size: 50px;
+}
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+small {
+  display: block;
+  font-size: 20px;
+  text-align: right;
+}
+.fas {
+  color: orange;
+}
+.card-body {
+  font-family: monospace;
+}
+
+.temperature {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.units {
+  font-size: 30px;
+  position: relative;
+  top: -25px;
+}
