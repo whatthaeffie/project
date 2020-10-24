@@ -14,6 +14,7 @@ li {
   display: block;
   font-size: 10px;
   text-align: center;
+  margin: 0 auto;
 }
 .col-6 {
   font-family: monospace;
@@ -22,12 +23,24 @@ li {
 
 .temperature {
   color: rgb(33, 33, 33);
-  font-size: 30px;
   line-height: 1;
+}
+.temperature strong {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+}
+.clearfix img {
+  margin-right: 20px;
+}
+.temperature .units {
+  font-size: 20px;
+  position: relative;
+  top: -25px;
 }
 .weather-app {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 30px auto 5px;
   padding: 20px 20px 10px 20px;
   border: 3px solid #000;
   border-radius: 6px;
@@ -48,12 +61,8 @@ li {
   list-style-type: none;
   font-size: 40px;
 }
+
 //
-.units {
-  font-size: 30px;
-  position: relative;
-  top: -25px;
-}
 .icons {
   color: orange;
 }
