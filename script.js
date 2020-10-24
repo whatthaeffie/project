@@ -27,7 +27,7 @@ function search(event) {
   cityElement.innerHTML = cityInput.value;
   searchCity(cityInput.value);
 }
-function displayWeather(response) {
+function displayTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
@@ -36,11 +36,13 @@ function displayWeather(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
 }
 function searchCity(city) {
-  let key = "02b99a7efa44729756b3eefe7f2f7c7b";
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
-  axios.get(url).then(displayWeather);
+  let key = "02e7ddbc3ff311d4cabd5ecac405c58a";
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=imperial`;
+  axios.get(url).then(displayTemperature);
 }
 let searchForm = document.querySelector("#searching");
 searchForm.addEventListener("submit", search);

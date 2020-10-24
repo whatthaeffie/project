@@ -8,6 +8,7 @@ ul {
 
 li {
   list-style-type: none;
+  text-transform: capitalize;
 }
 
 .source {
@@ -53,6 +54,10 @@ li {
   );
 }
 .date {
+  text-align: right;
+  list-style-type: none;
+}
+.info {
   text-align: right;
   list-style-type: none;
 }
