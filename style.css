@@ -2,12 +2,16 @@ h1 {
   font-family: "Special Elite", cursive;
   text-align: right;
 }
+
 ul {
   padding-inline-start: 25px;
 }
 
 li {
   list-style-type: none;
+}
+
+li:first-letter {
   text-transform: capitalize;
 }
 
@@ -17,6 +21,7 @@ li {
   text-align: center;
   margin: 0 auto;
 }
+
 .col-6 {
   font-family: monospace;
   font-size: 15px;
@@ -26,19 +31,23 @@ li {
   color: rgb(33, 33, 33);
   line-height: 1;
 }
+
 .temperature strong {
   font-size: 60px;
   font-weight: 400;
   line-height: 1;
 }
+
 .clearfix img {
   margin-right: 20px;
 }
+
 .temperature .units {
   font-size: 20px;
   position: relative;
   top: -25px;
 }
+
 .weather-app {
   max-width: 600px;
   margin: 30px auto 5px;
