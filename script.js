@@ -1,25 +1,25 @@
 function formatDate(timestamp) {
-    let now = new Date(timestamp);
-    let hours = now.getHours();
-    if (hours < 10) {
-        hours = `0${minutes}`;
-    }
-    let minutes = now.getMinutes();
-    if (minutes < 10) {
-        minutes = `0${minutes}`;
-    }
+  let now = new Date(timestamp);
+  let hours = now.getHours();
+  if (hours < 10) {
+    hours = `0${minutes}`;
+  }
+  let minutes = now.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 
-    let days = [
-        "Sunday",
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-    ];
-    let day = days[now.getDay()];
-    return = `${day} ${hours}:${minutes}`;
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[now.getDay()];
+  return `${day} ${hours}:${minutes}`;
 }
 
 function search(event) {
