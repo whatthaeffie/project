@@ -34,6 +34,11 @@ function displayTemperature(response) {
   document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
   );
+  iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/10d@2x.png`
+  );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
