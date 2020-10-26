@@ -1,6 +1,17 @@
+body,
+html {
+  background: url(https://static1.squarespace.com/static/5739ee5f356fb0e48837c22c/t/5f96319366dc2c25080e2295/1603678613420/graveyard.jpg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 h1 {
   font-family: "Special Elite", cursive;
   text-align: right;
+  color: #869f9c;
 }
 h3 {
   color: #fff;
@@ -26,15 +37,20 @@ li:first-letter {
   font-size: 10px;
   text-align: center;
   margin: 0 auto;
+  color: #ec6e4c;
+}
+.link {
+  color: #ec6e4c;
 }
 
 .col-6 {
   font-family: monospace;
   font-size: 15px;
+  color: #869f9c;
 }
 
 .temperature {
-  color: rgb(33, 33, 33);
+  color: #869f9c;
   line-height: 1;
 }
 
@@ -54,7 +70,7 @@ li:first-letter {
   top: -25px;
 }
 .temperature .active {
-  color: black;
+  color: #869f9c;
   cursor: default;
 }
 .temperature .active:hover {
@@ -66,21 +82,24 @@ li:first-letter {
   padding: 20px 20px 10px 20px;
   border: 3px solid #000;
   border-radius: 6px;
-  background: rgb(120, 119, 119);
+  background: rgb(20, 29, 38);
   background: linear-gradient(
     90deg,
-    rgba(120, 119, 119, 1) 15%,
-    rgba(91, 91, 91, 1) 50%,
-    rgba(120, 119, 119, 1) 85%
+    rgba(20, 29, 38, 1) 15%,
+    rgba(35, 52, 68, 1) 50%,
+    rgba(20, 29, 38, 1) 85%
   );
 }
 .date {
   text-align: right;
   list-style-type: none;
+  font-family: "Special Elite", cursive;
+  color: #869f9c;
 }
 .info {
   text-align: right;
   list-style-type: none;
+  color: #869f9c;
 }
 .skulls {
   color: #fff;
@@ -95,6 +114,7 @@ li:first-letter {
   background: #ec6e4c;
   color: black;
 }
+
 .weather-forecast {
   margin-top: 10px;
 }
@@ -108,4 +128,11 @@ li:first-letter {
   text-align: center;
   color: #ec6e4c;
   font-size: 15px;
+}
+.other {
+  color: #ec6e4c;
+}
+
+a:visited {
+  color: #ec6e4c;
 }

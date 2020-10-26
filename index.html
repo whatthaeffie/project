@@ -32,6 +32,7 @@
                 placeholder="Enter town to haunt..."
                 class="form-control"
                 autofocus="on"
+                autocomplete="off"
                 id="city-input"
               />
             </div>
@@ -43,10 +44,10 @@
         <h1 id="city"></h1>
         <ul>
           <li class="skulls">
-            <i class="fas fa-skull-crossbones"></i
-            ><i class="fas fa-skull-crossbones"></i
-            ><i class="fas fa-skull-crossbones"></i
-            ><i class="fas fa-skull-crossbones"></i>
+            <i class="fas fa-skull-crossbones"></i>
+            <i class="fas fa-skull-crossbones"></i>
+            <i class="fas fa-skull-crossbones"></i>
+            <i class="fas fa-skull-crossbones"></i>
           </li>
           <li class="date" id="date"></li>
           <li class="info" id="description"></li>
@@ -59,7 +60,7 @@
                 <strong id="temp"></strong
                 ><span class="units"
                   ><a href="#" id="fahrenheit" class="active">°F|</a
-                  ><a href="#" id="celsius">°C</a></span
+                  ><a href="#" id="celsius" class="other">°C</a></span
                 >
               </div>
             </div>
@@ -74,7 +75,11 @@
         <div class="row weather-forecast" id="forecast"></div>
       </div>
       <small class="source">
-        <a href="https://github.com/whatthaeffie/project" target="_blank">
+        <a
+          href="https://github.com/whatthaeffie/project"
+          target="_blank"
+          class="link"
+        >
           Open-source code</a
         >
         by Effie Fletcher
