@@ -2,7 +2,12 @@ h1 {
   font-family: "Special Elite", cursive;
   text-align: right;
 }
-
+h3 {
+  color: #fff;
+  font-family: "Special Elite", cursive;
+  font-size: 15px;
+  text-align: center;
+}
 ul {
   padding-inline-start: 25px;
 }
@@ -88,4 +93,18 @@ li:first-letter {
 .btn-primary:hover {
   background: #ec6e4c;
   color: black;
+}
+.weather-forecast {
+  margin-top: 10px;
+}
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+.weather-forecast-temp {
+  text-align: center;
+  color: #ec6e4c;
+  font-size: 15px;
 }
